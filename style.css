@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* mobile menu link style start */
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5f27cd;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .bars {
+    display: none;
+  }
+/* mobile menu link style end */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    box-shadow: 2px 2px 40px rgba(165, 177, 194, 0.4);
+    font-weight: 500;
+    z-index: 999;
+}
+.logo img{
+    height: 38px;
+    cursor: pointer;
+}
+.nav ul{
+    display: flex;
+}
+.nav li a{
+    font-size: 12px;
+    padding: 20px 15px;
+    color: #4b4b4b;
+    transition: 0.3s;
+}
+.nav li:hover a {
+    color: #a29bfe;
+}
+.section {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px 0;
+    background: #fdfdfd;
+}
+.heroImg {
+    padding-left: 50px;
+}
+h1{
+    font-size: 40px;
+}
+.heroHeading {
+    font-size: 60px;
+    margin: 20px 0;
+}
+.section .intro {
+    letter-spacing: 2px;
+}
+.little-des {
+    color: gray;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+.btn {
+    background: linear-gradient(45deg, rgba(108, 92, 231, 0.8), rgba(37, 205, 247, 0.8));
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.aboutMe {
+    margin: 0;
+    padding-top: 80px;
+    justify-content: space-between;
+}
+
+.aboutImg, .aboutBtn {
+    width: 45%;
+}
+.aboutImg img {
+    width: 100%;
+}
+.services h1, .sp1 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.services h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+.servicesBox {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.items-pra {
+    text-align: center;
+}
+.services-items {
+    width: 30%;
+    margin:50px 10px;
+    padding: 10px;
+}
+.services-items h3 {
+    text-align: center;
+    font-size: 25px;
+    padding: 40px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.services-items h3:hover {
+    color: #7ea6fc;
+}
+.services-items i{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: #7ea6fc;
+    cursor: pointer;
+}
+.c_0, .c_1, .c_2, .c_3{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+.countdown {
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #797dfb, #3abcfd);
+}
+.counterBox {
+    width: 25%;
+}
+.counter-pra{
+    color: #fff;
+    /* font-size: 20px; */
+}
+/* project section start */
+.project {
+    padding: 100px 0;
+}
+.project h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.project-pra {
+    text-align: center;
+}
+.filter-controll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 40px;
+}
+.filter-controll button {
+    background: linear-gradient(45deg, rgba(108, 92, 231, 0.8), rgba(37, 205, 247, 0.8));
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 70px;
+}
+.container .mix {
+    width: 31%;
+    margin: 1%;
+    cursor: pointer;
+}
+.mix img{
+    width: 100%;
+}
+.filter-controll .mixitup-control-active {
+    background: linear-gradient(90deg, #9C27B0, #E91E63);
+}
+.mix h3{
+    font-size: 18px;
+    padding: 20px 0 0;
+}
+.mix h3, .mix p {
+    text-align: center;
+}
+/* project section start */
+
+/* pricing section start */
+.pricing {
+    padding: 80px 0 40px;
+}
+.pricing h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.pricing p {
+    text-align: center;
+}
+.pricingContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9ff;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    margin-top: 100px;
+    transition: 1s;
+}
+.circle {
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    background: rgba(132, 144, 255, 0.1);
+    border-radius: 50%;
+    border: 30px solid rgba(132, 144, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle h1 {
+    padding: 0;
+    font-size: 36px;
+    font-weight: lighter;
+}
+.pricingBox {
+    width: 25%;
+    height: 500px;
+    background-color: #f9f9ff;
+    padding: 40px 20px;
+    transition: all 0.3s ease-out 0s;
+    cursor: pointer;
+}
+.pricingBox h3 {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0 0;
+}
+.pricingBox p {
+    padding: 10px 0;
+    margin: 0;
+}
+.pricingBox input {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    display: none;
+}
+.price, .pricingBox input {
+    margin: 30px 0;
+}
+.pricingBox:hover input{
+    display: block;
+}
+.price {
+    padding-bottom: 0 !important;
+}
+.pricingBox:hover .price {
+    display: none;
+}
+hr{
+    height: 1px;
+    background: #e6e4e4;
+}
+.pricingBox:hover {
+    background: linear-gradient(90deg, #797dfb, #3abcfd);
+    color: #fff;
+    scale: 1.05;
+    z-index: 2;
+}
+.pricingBox:hover .little-des{
+    color: #fff;
+}
+.pricingBox:hover .circle {
+    border: 30px solid rgba(242, 243, 255, 0.327);
+}
+/* pricing section end */
+
+/* footer section start */
+footer {
+    background-color: #04091e;
+    height: 70vh;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.footer-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff; 
+}
+.footerBox {
+    padding: 0 15px;
+}
+.box1 {
+    width: 50%;
+}
+.footerBox h3 {
+    margin-bottom: 25px;
+}
+.color {
+    color: #8490ff;
+}
+.fa-brands {
+    color: #fff;
+    font-size: 16px;
+    padding-right: 15px;
+}
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+.inputBox input{
+    padding-left: 20px;
+}
+.inputBox input::placeholder {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.inputBox button{
+    width: 50px;
+    color: #fff;
+    background: #1092f6;
+    height: 40px;
+    line-height: 40px;
+}
+.social-link {
+    display: flex;
+    justify-content: space-between;
+}
+/* footer section end */
+
+/* responsive code start */
+@media screen and (max-width: 1040px) {
+    .heroHeading {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+    footer {
+        height: 80vh;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .box1, .box2 {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .nav {
+        display: none;
+    }
+    .bars {
+        display: block;
+    }
+    .hero {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .heroImg img{
+        width: 100%;
+    }
+    .aboutMe {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .aboutImg {
+        width: 80%;
+    }
+    .aboutBtn {
+        width: 100%;
+    }
+    .services h1, .sp1 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .services-items {
+        width: 45%;
+    }
+    .pricingBox {
+        width: 40%;
+    }
+    h1, .heroHeading, .services h1 {
+        font-size: 30px;
+    }
+    h3, .services h3, .mix h3{
+        font-size: 18px;
+    }
+    footer{
+        height: auto;
+    }
+    .services{
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .container {
+        padding: 10px;
+    }
+    .services-items {
+        width: 45%;
+    }
+    .container .mix {
+        width: 47%;
+    }
+    .countdown {
+        height: auto;
+        padding: 30px 0;
+    }
+    .counterBox {
+        width: 50%;
+    }
+    .counter-pra {
+        padding-bottom: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .box1, .box2, .box3{
+        width: 100%;
+        padding: 25px 0;
+    }
+    .social-link {
+        justify-content: flex-start;
+    }
+    .circle {
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+        border: 20px solid rgba(132, 144, 255, 0.1); 
+    }
+    .pricingContainer {
+        padding: 0;
+    }
+    .price {
+        font-size: 25px;
+    }
+    .pricingBox {
+        width: 50%;
+    }
+    .pricingBox input {
+        height: 40px;
+        font-size: 16px;
+    }
+    .pricingBox .little-des {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .filter-controll button {
+        font-size: 12px;
+        padding: 7px 15px;
+        margin: 0 4px;
+        font-weight: bold;
+    }
+    .services-items {
+        width: 100%;
+    }
+    .container .mix {
+        width: 48%;
+    }
+    .countdown {
+        height: auto;
+        padding: 30px 0;
+    }
+    .counterBox {
+        width: 100%;
+    }
+    .counter-pra {
+        padding-bottom: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .box1, .box2, .box3{
+        width: 100%;
+        padding: 25px 0;
+    }
+    .social-link {
+        justify-content: flex-start;
+    }
+    
+}
+/* responsive code end */
+
+
+
